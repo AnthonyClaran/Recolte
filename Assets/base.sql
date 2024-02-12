@@ -16,7 +16,8 @@ DateNaissance DATE );
 Create table du_the
 (id_variete_the INT primary key,
 nom_variete_the VARCHAR(50),
-occupation INT, rendement INT );
+occupation INT, 
+rendement INT );
 
 CREATE TABLE partielle 
 (num_partielle INT,
