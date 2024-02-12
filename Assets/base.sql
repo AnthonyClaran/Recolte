@@ -1,3 +1,4 @@
+
 use db_desp3_ETU002866;
 CREATE TABLE admine 
 (id_admin INT primary key auto_increment,
@@ -16,8 +17,24 @@ DateNaissance DATE );
 Create table du_the
 (id_variete_the INT primary key,
 nom_variete_the VARCHAR(50),
-occupation INT, 
-rendement INT );
+occupation INT, rendement INT );
+
+Create table cueilleurs
+(id_cueilleurs INT primary key,
+nom_ceuilleurs VARCHAR(50),
+genre VARCHAR(20), 
+DateNaissance date );
+
+Create table depense
+(id_depense INT primary key,
+categorie_depense VARCHAR(50),
+montant DOUBLE, 
+Date_dep date );
+
+Create table salaire
+(id_cueilleurs INT,
+montant DOUBLE 
+);
 
 CREATE TABLE partielle 
 (num_partielle INT,
@@ -26,5 +43,6 @@ id_variete_the INT,
 FOREIGN KEY(id_variete_the) REFERENCES du_the (id_variete_the) 
 );
 
-Insert into admine  VALUES ('1','Randrianante@gmail.com','FIDY','Nante Andria','2000-05-10' );
-Insert into user  VALUES ('1','tikiz@gmail.com','tikiz','tikiz Randria','2003-06-12' );
+
+Insert into admine  VALUES ('1','Randrianante@gmail.com',('FIDY'),'Nante Andria','2000-05-10' );
+Insert into user  VALUES ('1','tikiz@gmail.com',('tikiz'),'tikiz Randria','2003-06-12' );
