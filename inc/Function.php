@@ -15,7 +15,7 @@
 	}
     function checkAdmine($pseudo,$mdp)
     {
-        $sql="SELECT * FROM admine Where Email=%s AND Motdepasse=%s";
+        $sql="SELECT * FROM admine Where Email=%s AND Motdepasse=%s ";
         $sql=sprintf($sql,$pseudo,$mdp);
         $resultat=mysqli_query(dbconnect(),$sql);
         $nombre=mysqli_num_rows($resultat);
