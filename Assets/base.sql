@@ -44,5 +44,5 @@ FOREIGN KEY(id_variete_the) REFERENCES du_the (id_variete_the)
 );
 
 
-Insert into admine  VALUES ('1','Randrianante@gmail.com',('FIDY'),'Nante Andria','2000-05-10' );
-Insert into user  VALUES ('1','tikiz@gmail.com',('tikiz'),'tikiz Randria','2003-06-12' );
+Insert into admine  VALUES ('1','Randrianante@gmail.com','FIDY','Nante Andria','2000-05-10' );
+Insert into user  VALUES ('1','tikiz@gmail.com','tikiz','tikiz Randria','2003-06-12' );
