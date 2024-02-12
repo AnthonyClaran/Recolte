@@ -1,7 +1,7 @@
 <?php
     include("connect.php");
     
-    function checkUtilisateur($pseudo,$mdp)
+    function checkAdmine($pseudo,$mdp)
     {
         $sql="SELECT * FROM achat ";
         $sql=sprintf($sql,$pseudo,$mdp);
