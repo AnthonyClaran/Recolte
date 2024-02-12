@@ -1,17 +1,20 @@
-
-
+<?php
+  require('../inc/Function.php');
+  $cueilleur = getcueilleurs();
+  $isa=count($cueilleur);
+?>
 <div class="login-page">
    <center> 
     <p style = "color : white; font-size: 30px; font-family: Greating ; "> Gestion des Cueilleurs</p> 
     
    </center>   
   <div class="form"  style = "font-family : Russo One">
-    <form class="login-form">
+    <form class="login-form" action="traitement/Cueilleur.php" method="GET" >
     <p>Nom</p>
-      <input type="text"> 
+      <input type="text" name="nom"> 
 
     <p>Date de Naissance</p>
-    <input type="date">
+    <input type="date" name="dtn">
 
 
     <p>Genre</p>
@@ -24,5 +27,26 @@
       <button>Valider</button>
       </form>
   </div>
- 
-</div> 
+</div>
+<div>
+  <Table>
+    <tr>
+      <td>id de cueilleur de the</td>
+      <td>nom de cueilleur de the</td>
+      <td>occupation</td>
+      <td>rendement</td>
+    </tr>
+    <?php
+      for ($i=0; $i < $isa; $i++) { 
+        ?>
+          <tr>
+            <td><?php echo $cueilleur[$i]['id_cueilleurs'] ?></td>
+            <td><?php echo $cueilleur[$i]['nom_ceuilleurs'] ?></td>
+            <td><?php echo $cueilleur[$i]['genre'] ?></td>
+            <td><?php echo $cueilleur[$i]['DateNaissance'] ?></td>
+          </tr>
+        <?php
+      }
+    ?>
+  </Table>
+</div>

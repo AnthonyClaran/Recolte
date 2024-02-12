@@ -7,9 +7,9 @@
         $id = count($taille) + 1;
     }
 
-    $montant = $_GET['salaire'];
+    $nom = $_GET['nom'];
 
-    setsalaire($id,$montant);
+    setcategorie($id,$nom);
 
-    header('location:../template.php?page=salaire');
+    header('location:../template.php?page=depense');
 ?>

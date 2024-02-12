@@ -128,13 +128,6 @@
         $resultat=mysqli_query(dbconnect(),$sql);
     }
 
-    function getresulat()
-    {
-        $sql="SELECT * FROM resulat";
-        $resultat=mysqli_query(dbconnect(),$sql);
-        return getContent($resultat);
-    }
-
     function getdu_the()
     {
         $sql="SELECT * FROM du_the";

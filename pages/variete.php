@@ -1,7 +1,7 @@
 <?php
   require('../inc/Function.php');
-  $taille = getdu_the();
-  $isa=count($taille);
+  $variete = getdu_the();
+  $isa=count($variete);
 ?>
 <div class="login-page">
    <center> 
@@ -24,14 +24,20 @@
 </div>
 <div>
   <Table>
+    <tr>
+      <td>id de variete de the</td>
+      <td>nom de variete de the</td>
+      <td>occupation</td>
+      <td>rendement</td>
+    </tr>
     <?php
       for ($i=0; $i < $isa; $i++) { 
         ?>
           <tr>
-            <td><?php echo $taille[$i]['id_variete_the'] ?></td>
-            <td><?php echo $taille[$i]['nom_variete_the'] ?></td>
-            <td><?php echo $taille[$i]['occupation'] ?></td>
-            <td><?php echo $taille[$i]['rendement'] ?></td>
+            <td><?php echo $variete[$i]['id_variete_the'] ?></td>
+            <td><?php echo $variete[$i]['nom_variete_the'] ?></td>
+            <td><?php echo $variete[$i]['occupation'] ?></td>
+            <td><?php echo $variete[$i]['rendement'] ?></td>
           </tr>
         <?php
       }

@@ -1,8 +1,7 @@
-<<<<<<< HEAD
-CREATE database db_desp3_ETU002866;
-=======
+
+
 CREATE DATABASE Recolte;
->>>>>>> 935b46a2150e1b47ccdb51b4f34ad3361fc41b5e
+
 use db_desp3_ETU002866;
 CREATE TABLE admine 
 (id_admin INT primary key auto_increment,
