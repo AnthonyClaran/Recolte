@@ -3,7 +3,7 @@
     
     function checkAdmine($pseudo,$mdp)
     {
-        $sql="SELECT * FROM admine Where %s";
+        $sql="SELECT * FROM admine Where %s,%s";
         $sql=sprintf($sql,$pseudo,$mdp);
         $resultat=mysqli_query(dbconnect(),$sql);
         $nombre=mysqli_num_rows($resultat);
