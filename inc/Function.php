@@ -1,6 +1,18 @@
 <?php
     include("connect.php");
     
+    function getContent($request)
+	{
+		$i=0;
+		$content=array();
+		while ($donnees=mysqli_fetch_assoc($request))
+		{
+			$content[$i]=$donnees;
+			$i++;
+		}
+		mysqli_free_result($request);
+		return $content;
+	}
     function checkAdmine($pseudo,$mdp)
     {
         $sql="SELECT * FROM admine Where %s,%s";
@@ -24,5 +36,11 @@
         $sql=sprintf($sql,$id,$Email,$mdp,$nom,$date);
         
         $resultat=mysqli_query(dbconnect(),$sql);
+    }
+    function getPartielle()
+    {
+        $sql="SELECT * FROM partielle";
+        $resultat=mysqli_query(dbconnect(),$sql);
+        return getContent($resultat);
     }
 ?>
