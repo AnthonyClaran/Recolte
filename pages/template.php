@@ -19,11 +19,11 @@
 <nav class="navbar navbar-inverse">
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="variete.php">Variete</a></li>
-        <li><a href="parcelle.php">Parcelles</a></li>
-        <li><a href="cueilleur.php">Cueilleurs</a></li>
-        <li><a href="depense.php">Depense</a></li>
-        <li><a href="salaire.php">Salaire</a></li>
+        <li><a href="template.php?page=variete">Variete</a></li>
+        <li><a href="template.php?page=parcelle">Parcelles</a></li>
+        <li><a href="template.php?page=cueilleur">Cueilleurs</a></li>
+        <li><a href="template.php?page=depense">Depense</a></li>
+        <li><a href="template.php?page=salaire">Salaire</a></li>
       </ul>
     </div>
   </div>

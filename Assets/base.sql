@@ -47,8 +47,8 @@ Create table salaire
 montant DOUBLE 
 );
 
-CREATE TABLE partielle 
-(num_partielle INT,
+CREATE TABLE parcelle 
+(num_parcelle INT,
 surface_ha INT,
 id_variete_the INT, 
 FOREIGN KEY(id_variete_the) REFERENCES du_the (id_variete_the) 
