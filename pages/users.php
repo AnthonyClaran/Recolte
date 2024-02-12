@@ -15,7 +15,7 @@
 
 <div class="login-page">
    <center> 
-    <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Veuillez completez en tant qu'Admin</p> 
+    <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Veuillez completez en tant qu'Utilisateurs</p> 
     
    </center>   
   <div class="form">
@@ -26,7 +26,7 @@
       </form>
   </div>
   <center> 
-   <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Passez en tant qu'Utilisateurs  <a href = "users.php">  cliquez ici </a></p> 
+   <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Passez en tant qu'Admin <a href = "index.php"> cliquer ici </p> 
    </center> 
 </div> 
 </body>
