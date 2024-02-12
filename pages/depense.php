@@ -12,24 +12,21 @@
 
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="variete.php">Variete</a></li>
-        <li><a href="parcelle.php">Parcelles</a></li>
-        <li><a href="cueilleur.php">Cueilleurs</a></li>
-        <li><a href="depense.php">Depense</a></li>
-        <li><a href="salaire.php">Salaire</a></li>
-      </ul>
-    </div>
+
+<div class="login-page">
+   <center> 
+    <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Gestion des Categories des depenses</p> 
+    
+   </center>   
+  <div class="form">
+    <form class="login-form">
+    <p>Categories</p>
+      <input type="text"> 
+  
+      <button>Valider</button>
+      </form>
   </div>
-</nav>
 
-
-
-<footer>.......</footer>
-
-</body>
-</html>
+</div> 
 </body>
 </html>

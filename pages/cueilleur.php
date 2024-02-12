@@ -15,22 +15,29 @@
 
 <div class="login-page">
    <center> 
-    <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Gestion de Variété de Thé</p> 
+    <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Gestion des Cueilleurs</p> 
     
    </center>   
   <div class="form">
     <form class="login-form">
-    <p>Nom du The </p>
+    <p>Nom</p>
       <input type="text"> 
-    <p>m/pieds</p>
-      <input type="number"> 
-    <p>Kg/Mois</p>
-      <input type="number"> 
 
+    <p>Date de Naissance</p>
+    <input type="date">
+
+
+    <p>Genre</p>
+    <br><select name="genre" id="select">
+    <br><option value ="Homme">Homme </option>
+    <option value ="Femme">Femme </option>
+    </select><br>
+    <br>
+  
       <button>Valider</button>
       </form>
   </div>
-  
+ 
 </div> 
 </body>
 </html>
