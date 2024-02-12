@@ -21,7 +21,7 @@
     function setadmine($id,$Email,$mdp,$nom,$date)
     {
         $sql="INSERT INTO admine VALUES (%d,%d,%s,%s,%d)";
-        $sql=sprintf($sql,$date,$id,$quant,$prix);
+        $sql=sprintf($sql,$id,$Email,$mdp,$nom,$date);
         
         $resultat=mysqli_query(dbconnect(),$sql);
     }
