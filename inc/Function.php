@@ -176,5 +176,20 @@
         $resultat=mysqli_query(dbconnect(),$sql);
         return getContent($resultat);
     }
-    
+
+    function gethisto_cuiellet ()
+    {
+        $sql="SELECT * FROM histo_cuiellet ";
+        $resultat=mysqli_query(dbconnect(),$sql);
+        return getContent($resultat);
+    }
+
+    function sethisto_cuiellet ($id,$num,$poid,$dateD,$dateF)
+    {
+        $sql="INSERT INTO histo_cuiellet VALUES (%d,%d,'%s','%s','%s')";
+        $sql=sprintf($sql,$poidt,$poidr,$cout);
+        
+        $resultat=mysqli_query(dbconnect(),$sql);
+    }
+
 ?>
