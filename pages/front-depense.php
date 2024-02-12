@@ -4,7 +4,7 @@
     <p style = "color : white; font-size: 30px; font-family: Greating ; "> Cueillettes</p> 
     
    </center>   
-  <div class="form">
+  <div class="form" style = "font-family : Russo One">
     <form class="login-form">
     <p>Date de depenses</p>
     <input type="date">

@@ -3,7 +3,7 @@
     <p style = "color : white; font-size: 30px; font-family: Greating ;  "> Gestion des Categories des depenses</p> 
     
    </center>   
-  <div class="form">
+  <div class="form" style = "font-family : Russo One">
     <form class="login-form">
     <p>Categories</p>
       <input type="text"> 

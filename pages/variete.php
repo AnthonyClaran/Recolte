@@ -3,9 +3,9 @@
     <p style = "color : white; font-size: 30px; font-family: Greating ; "> Gestion de Variété de Thé</p> 
     
    </center>   
-  <div class="form">
+  <div class="form " style = "font-family : Russo One">
     <form class="login-form">
-    <p>Nom du The </p>
+    <p >Nom du The </p>
       <input type="text"> 
     <p>m/pieds</p>
       <input type="number"> 
