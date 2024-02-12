@@ -1,5 +1,5 @@
 <?php
-    function dbconnect()
+    /*function dbconnect()
     {
         static $connect = null;
         if ($connect === null) {
@@ -16,5 +16,14 @@
             }
         }
         return $connect;
+    }*/
+
+    function dbconnect()
+{
+    static $connect = null;
+    if ($connect === null) {
+        $connect = mysqli_connect('localhost','root','','Recolte');
     }
+    return $connect;
+}
 ?>
