@@ -19,15 +19,16 @@
     
    </center>   
   <div class="form" style = "font-family : Russo One" >
-    <form class="header.php">
-      <input type="text" placeholder="Email"/>
-      <input type="password" placeholder="password"/>
+    <form class="header.php" action="traitement_users.php" methode="get">
+      <input type="text" placeholder="Email" name="email"/>
+      <input type="password" placeholder="password" name="mdp"/>
       <button>Login</button>
       </form>
   </div>
   <center> 
    <p style = "color : white; font-size: 18px; font-family: ANTON; font-style: italic; "> Passez en tant qu'Admin <a href = "index.php"> cliquer ici </p> 
    </center> 
+   part1salle3!
 </div> 
 </body>
 </html>

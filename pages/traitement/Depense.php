@@ -6,7 +6,6 @@
     } else {
         $id = count($taille) + 1;
     }
-
     $nom = $_GET['nom'];
 
     setcategorie($id,$nom);

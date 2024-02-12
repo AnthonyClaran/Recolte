@@ -19,9 +19,9 @@
 <nav class="navbar navbar-inverse">
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="saisie.php">Saisie</a></li>
-        <li><a href="front-depense.php">Depenses</a></li>
-        <li><a href="resultat.php">Resultat</a></li>
+        <li><a href="client.php?page=saisie">Saisie</a></li>
+        <li><a href="client.php?page=front-depense">Depenses</a></li>
+        <li><a href="client.php?page=resultat">Resultat</a></li>
       </ul>
     </div>
   </div>

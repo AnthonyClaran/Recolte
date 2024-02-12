@@ -41,7 +41,7 @@
 
     function checkuser($pseudo,$mdp)
     {
-        $sql="SELECT * FROM user Where %s,%s";
+        $sql="SELECT * FROM user Where Email='%s' AND Motdepasse='%s'";
         $sql=sprintf($sql,$pseudo,$mdp);
         $resultat=mysqli_query(dbconnect(),$sql);
         $nombre=mysqli_num_rows($resultat);
