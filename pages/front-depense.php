@@ -1,7 +1,7 @@
 
 <div class="login-page">
    <center> 
-    <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Cueillettes</p> 
+    <p style = "color : white; font-size: 30px; font-family: Greating ; "> Cueillettes</p> 
     
    </center>   
   <div class="form">

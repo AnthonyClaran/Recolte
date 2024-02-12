@@ -1,6 +1,6 @@
 <div class="login-page">
    <center> 
-    <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Gestion de Variété de Thé</p> 
+    <p style = "color : white; font-size: 30px; font-family: Greating ; "> Gestion de Variété de Thé</p> 
     
    </center>   
   <div class="form">

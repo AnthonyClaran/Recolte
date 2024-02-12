@@ -1,6 +1,6 @@
 <div class="login-page">
    <center> 
-    <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Configuration des Salaires</p> 
+    <p style = "color : white; font-size: 30px; font-family: Greating ; "> Configuration des Salaires</p> 
     
    </center>   
   <div class="form">

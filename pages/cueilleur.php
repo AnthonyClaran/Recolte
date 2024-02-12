@@ -2,7 +2,7 @@
 
 <div class="login-page">
    <center> 
-    <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Gestion des Cueilleurs</p> 
+    <p style = "color : white; font-size: 30px; font-family: Greating ; "> Gestion des Cueilleurs</p> 
     
    </center>   
   <div class="form">
