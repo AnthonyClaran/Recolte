@@ -19,9 +19,9 @@
     
    </center>   
   <div class="form">
-    <form class="login-form">
-    <p>Nom</p>
-      <input type="text"> 
+    <form class="login-form" action="traitement/Salaire.php" method="GET">
+    <p>Salaire</p>
+      <input type="number" > 
 
     
       <button>Modifier</button>
