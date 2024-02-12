@@ -18,9 +18,9 @@
         }
     }
         
-    function setAchat($date,$id,$quant,$prix)
+    function setadmine($id,$Email,$mdp,$nom,$date)
     {
-        $sql="INSERT INTO DemandeDepot VALUES (%d,%d,%d,%d)";
+        $sql="INSERT INTO admine VALUES (%d,%d,%s,%s,%d)";
         $sql=sprintf($sql,$date,$id,$quant,$prix);
         
         $resultat=mysqli_query(dbconnect(),$sql);
