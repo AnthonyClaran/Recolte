@@ -1,3 +1,7 @@
+<?php
+  $page=$_GET['page'];
+  $page=$page . ".php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +29,9 @@
   </div>
 </nav>
 
-
+<?php
+  include($page);
+?>
 
 <footer>.......</footer>
 
