@@ -19,7 +19,7 @@
     
    </center>   
   <div class="form">
-    <form class="login-form">
+    <form class="template.php">
       <input type="text" placeholder="Email"/>
       <input type="password" placeholder="password"/>
       <button>Login</button>

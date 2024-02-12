@@ -15,19 +15,24 @@
 
 <div class="login-page">
    <center> 
-    <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Veuillez completez en tant qu'Utilisateurs</p> 
+    <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Gestion de Variété de Thé</p> 
     
    </center>   
   <div class="form">
-    <form class="header.php">
-      <input type="text" placeholder="Email"/>
-      <input type="password" placeholder="password"/>
-      <button>Login</button>
+    <form class="login-form">
+    <p>Nom du The </p>
+      <input type="text"> 
+    <p>m/pieds</p>
+      <input type="number"> 
+    <p>Kg/Mois</p>
+      <input type="number"> 
+
+      <button>Valider</button>
       </form>
   </div>
   <center> 
    <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Passez en tant qu'Admin <a href = "index.php"> cliquer ici </p> 
-   </center> 
+  </center> 
 </div> 
 </body>
 </html>
