@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="../Assets/logo.png">
+    <link rel="stylesheet" href="../Assets/style.css">
+    <link href="../Assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../Assets/js/jquery.min.js"></script>
+    <script src="../Assets/js/bootstrap.min.js"></script>
+    <title>Recolte</title>
+
 </head>
 <body>
-    
+
+<div class="login-page">
+   <center> <p style = "color : white; font-size: larger; font-family: Georgia; font-style: italic; "> Veuillez completez </p> </center>   
+  <div class="form">
+    <form class="login-form">
+      <input type="text" placeholder="Email"/>
+      <input type="password" placeholder="password"/>
+      <button>Login</button>
+      </form>
+  </div>
+</div> 
 </body>
 </html>
