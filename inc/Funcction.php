@@ -22,6 +22,7 @@
     {
         $sql="INSERT INTO DemandeDepot VALUES (%d,%d,%d,%d)";
         $sql=sprintf($sql,$date,$id,$quant,$prix);
+        
         $resultat=mysqli_query(dbconnect(),$sql);
     }
 ?>
