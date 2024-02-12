@@ -19,9 +19,9 @@
     
    </center>   
   <div class="form">
-    <form class="template.php">
-      <input type="text" placeholder="Email"/>
-      <input type="password" placeholder="password"/>
+    <form class="template.php" action="traitment_index.php" methode="get">
+      <input type="text" placeholder="Email" name="email"/>
+      <input type="password" placeholder="password" name="mdp"/>
       <button>Login</button>
       </form>
   </div>

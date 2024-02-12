@@ -15,7 +15,7 @@
 	}
     function checkAdmine($pseudo,$mdp)
     {
-        $sql="SELECT * FROM admine Where %s,%s";
+        $sql="SELECT * FROM admine Where Email=%s AND Motdepasse=%s";
         $sql=sprintf($sql,$pseudo,$mdp);
         $resultat=mysqli_query(dbconnect(),$sql);
         $nombre=mysqli_num_rows($resultat);
@@ -32,7 +32,7 @@
         
     function setadmine($id,$Email,$mdp,$nom,$date)
     {
-        $sql="INSERT INTO admine VALUES (%d,%d,%s,%s,%d)";
+        $sql="INSERT INTO admine VALUES (%d,%d,'%s','%s',%d)";
         $sql=sprintf($sql,$id,$Email,$mdp,$nom,$date);
         
         $resultat=mysqli_query(dbconnect(),$sql);
@@ -57,7 +57,7 @@
         
     function setuser($id,$Email,$mdp,$nom,$date)
     {
-        $sql="INSERT INTO user VALUES (%d,%d,%s,%s,%d)";
+        $sql="INSERT INTO user VALUES (%d,%d,'%s','%s',%d)";
         $sql=sprintf($sql,$id,$Email,$mdp,$nom,$date);
         
         $resultat=mysqli_query(dbconnect(),$sql);
@@ -65,7 +65,7 @@
 
     function setdu_the($id,$nom,$occup,$rende)
     {
-        $sql="INSERT INTO du_the VALUES (%d,%s,%d,%d)";
+        $sql="INSERT INTO du_the VALUES (%d,'%s',%d,%d)";
         $sql=sprintf($sql,$id,$nom,$occup,$rende);
         
         $resultat=mysqli_query(dbconnect(),$sql);
