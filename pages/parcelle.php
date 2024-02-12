@@ -2,7 +2,7 @@
   require('../inc/Function.php');
   $variete = getdu_the();
   $isaV=count($variete);
-  $parcelle = getdu_the();
+  $parcelle = getparcelle();
   $isap=count($parcelle);
 ?>
 <div class="login-page">
@@ -42,7 +42,7 @@
       for ($i=0; $i < $isap; $i++) { 
         ?>
           <tr>
-            <td><?php echo $parcelle[$i]['num_partielle'] ?></td>
+            <td><?php echo $parcelle[$i]['num_parcelle'] ?></td>
             <td><?php echo $parcelle[$i]['surface_ha'] ?></td>
             <td><?php echo $parcelle[$i]['id_variete_the'] ?></td>
           </tr>

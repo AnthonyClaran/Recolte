@@ -156,6 +156,13 @@
         return getContent($resultat);
     }
 
+    function getparcelle()
+    {
+        $sql="SELECT * FROM parcelle";
+        $resultat=mysqli_query(dbconnect(),$sql);
+        return getContent($resultat);
+    }
+
     function getsalaire()
     {
         $sql="SELECT * FROM salaire";
