@@ -121,10 +121,10 @@
         $resultat=mysqli_query(dbconnect(),$sql);
     }
 
-    function setresulat($poidt,$poidr,$cout)
+    function setresultat($id,$poidt,$poidr,$monatantV,$montantD,$banefice,$cout)
     {
-        $sql="INSERT INTO resulat VALUES (%d,%d,'%s')";
-        $sql=sprintf($sql,$poidt,$poidr,$cout);
+        $sql="INSERT INTO resultat VALUES (%d,'%s','%s','%s','%s','%s','%s')";
+        $sql=sprintf($sql,$id,$poidt,$poidr,$monatantV,$montantD,$banefice,$cout);
         
         $resultat=mysqli_query(dbconnect(),$sql);
     }
