@@ -76,5 +76,7 @@ CREATE TABLE rageneration(
 
 
 
+
+
 Insert into admine  VALUES ('1','Randrianante@gmail.com','FIDY','Nante Andria','2000-05-10' );
 Insert into user  VALUES ('1','tikiz@gmail.com','tikiz','tikiz Randria','2003-06-12' );
