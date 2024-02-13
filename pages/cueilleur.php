@@ -26,7 +26,7 @@
   </div>
 </div>
 <div>
-  <Table>
+  <Table class = "table" style = "background-color : white">
     <tr>
       <td>id de cueilleur de the</td>
       <td>nom de cueilleur de the</td>

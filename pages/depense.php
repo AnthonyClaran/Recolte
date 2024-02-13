@@ -18,7 +18,7 @@
   </div>
 </div> 
 <div>
-  <Table>
+  <Table class = "table" style = "background-color : white">
     <tr>
       <td>id de cueilleurs</td>
       <td>montant</td>

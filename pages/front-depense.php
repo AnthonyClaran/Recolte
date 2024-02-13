@@ -20,7 +20,8 @@
           <?php
         }
       ?>
-    </select>
+    </select><br>
+    <br>
     <p>Montant</p>
     <input type="number" name="montant"> 
  

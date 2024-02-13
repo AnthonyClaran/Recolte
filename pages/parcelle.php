@@ -30,7 +30,7 @@
   </div>
 </div> 
 <div>
-  <Table>
+  <Table class = "table" style = "background-color : white">
     <tr>
       <td>N de Parcelle</td>
       <td>Surface en Ha</td>

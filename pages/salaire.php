@@ -17,8 +17,8 @@
   </div>
 </div>
 <div>
-  <Table broder>
-    <tr style = "background-color = White">
+  <Table class = "table" style = "background-color : white">
+    <tr>
       <td>iD de cueilleurs</td>
       <td>montant</td>
     </tr>
