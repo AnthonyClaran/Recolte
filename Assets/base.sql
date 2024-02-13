@@ -57,10 +57,13 @@ id_variete_the INT,
 FOREIGN KEY(id_variete_the) REFERENCES du_the (id_variete_the) 
 );
 
-CREATE TABLE resulat 
+CREATE TABLE resultat 
 ( Id_resultat INT PRIMARY KEY auto_increment,
-poid_total_ceuillette INT,
-poid_restant INT,
+poid_total_ceuillette DOUBLE,
+poid_restant_parcelle DOUBLE,
+montant_ventes DOUBLE,
+montant_depense DOUBLE,
+benefice DOUBLE,
 cout_de_revien_kg DOUBLE
 );
 
@@ -95,8 +98,8 @@ CREATE TABLE regeneration(
 CREATE TABLE mouvement
 (id_mouve INT PRIMARY KEY auto_increment,
 id_parcelle  INT,
-poid_plein int , 
-poid_mouvement int ,
+poid_plein DOUBLE , 
+poid_mouvement DOUBLE ,
 FOREIGN KEY (id_parcelle)REFERENCES parcelle(id_parcelle));
 
 Insert into admine  VALUES ('1','Randrianante@gmail.com','FIDY','Nante Andria','2000-05-10' );
