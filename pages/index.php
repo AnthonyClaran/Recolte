@@ -11,23 +11,26 @@
     <title>Recolte</title>
 
 </head>
-<body>
-<img src="../Assets/image/the.png" width="50" height="50"> <p style = "color : white; font-family : georgia; font-size : 20px; font-style: italic ; float = left">La Récolte </p> </img>
+<body style="background: url(../Assets/image/hehe.jpg) ; background-repeat : no-repeat; background-size : cover;">
+
 <div class="login-page">
-   <center> 
-    <p style = "color : white; font-size: 18px; font-family: ANTON; font-style: italic; "> Veuillez completez en tant qu'Admin</p> 
     
-   </center>   
   <div class="form">
     <form class="template.php" action="traitment_index.php" methode="get">
+    
+          <div style ="color = black">
+          <img src="../Assets/image/icon.png" width=20px height=20px> 
+          <p style = "color : black ; font-size: 15px; font-family: Lucida Handwriting; float right "> Recolte</p>
+          </div>
+    <p style = "color : black; font-size: 12px; font-family : Monaco; font-style: italic; "> Veuillez completez en tant qu'Admin</p> 
       <input type="text" placeholder="Email" name="email"/>
       <input type="password" placeholder="password" name="mdp"/>
       <button>Login</button>
+      <br>
+      <br><p style = "color : green ; font-size: 12px; font-style: italic; "> Passez en tant qu'Utilisateurs  <a href = "users.php">  cliquez ici </a></p> 
       </form>
   </div>
-  <center> 
-   <p style = "color : white; font-size: 18px; font-family: ANTON; font-style: italic; "> Passez en tant qu'Utilisateurs  <a href = "users.php">  cliquez ici </a></p> 
-   </center> 
+ 
 </div> 
 </body>
 </html>

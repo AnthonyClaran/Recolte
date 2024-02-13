@@ -15,7 +15,7 @@
     <title>Recolte</title>
 
 </head>
-<body>
+<body style="background: url(../Assets/image/hehe.jpg) ; background-repeat : no-repeat; background-size : cover;">
 <nav class="navbar navbar-inverse">
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
@@ -38,7 +38,14 @@
   include($page);
 ?>
 
-<footer>.......</footer>
+<footer>
+<div class="text-center p-4" style="background-color: black">
+<p style = "color : white; float : right;">  ETU2866     Fanasina </p>
+  <p style = "color : white; float : left; " >  ETU2820     Anthony </p>
+  <p style = "color : white ; float : center;">  ETU2837     Fenoantra </p>
+
+  </div>
+</footer>
 
 </body>
 </html>
