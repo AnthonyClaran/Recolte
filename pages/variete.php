@@ -25,6 +25,7 @@
 <div>
 <form class="login-form" action="traitement/Variete.php" method="GET">
 <center>
+  <div style = "margin: 30px; background-color: #ffffff; border: 1px solid black; opacity: 0.6">
   <p style = "color : white; font-size: 20px; font-family: georgia ; "> Saison de Regeneration </p>
   <input type="checkbox" name="mois" value="Janvier"> Janvier
   <input type="checkbox" name="mois" value="Fevrier"> Fevrier 
@@ -41,11 +42,14 @@
   <br>
   <br>
   <button> Sauvegarder</button>
+</p>
+</div>
+</div>
 </center>
 </form>
 <br>
   <center>
-  <Table border="1" padding = 15px>
+  <Table class = "table" style = "background-color : white">
     <tr >
       <td style = "color = red ">id de variete de the</td>
       <td>nom de variete de the</td>
