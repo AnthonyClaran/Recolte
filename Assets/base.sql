@@ -60,7 +60,9 @@ cout_de_revien_kg DOUBLE
 );
 
 CREATE TABLE histo_cuiellet 
-(id_cueilleurs INT,
+(
+id_histo INT PRIMARY KEY auto_increment,
+id_cueilleurs INT,
 num_parcelle INT,
 poids_ceuillet DOUBLE,
 date_debut DATE,
@@ -68,8 +70,8 @@ date_fin DATE,
 FOREIGN KEY(id_cueilleurs) REFERENCES cueilleurs(id_cueilleurs)
 );
 
-CREATE TABLE rageneration(
-    id INT PRIMARY KEY,
+CREATE TABLE regeneration(
+    id INT PRIMARY KEY auto_increment,
     regeneration INT
 );
 

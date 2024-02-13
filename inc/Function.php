@@ -192,9 +192,9 @@
         $resultat=mysqli_query(dbconnect(),$sql);
     }
 
-    function DeleteProduitById($id)
+    function Deletehisto_cuielletById($id)
     {
-        $sql="Delete FROM Produit WHERE idCategorie=%d";
+        $sql="Delete FROM histo_cuiellet WHERE idCategorie=%d";
         $sql=sprintf($sql,$id);
         mysqli_query(dbconnect(),$sql);
     }
