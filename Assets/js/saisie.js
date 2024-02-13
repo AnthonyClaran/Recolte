@@ -26,7 +26,7 @@ function sendData() {
         alert('Oups! Quelque chose s\'est mal passé.');
     });
 
-    xhr.open("GET", "getVariete.php");
+    xhr.open("GET", "Voirsaise.php");
     xhr.send(formData);
 }
 

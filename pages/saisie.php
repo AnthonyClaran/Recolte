@@ -1,6 +1,6 @@
 <?php
   require('../inc/Function.php');
-  $cueillette = getdu_the();
+  $cueillette = getcueilleurs();
   $isaV=count($cueillette);
   $parcelle = getparcelle();
   $isap=count($parcelle);
@@ -12,25 +12,34 @@
    </center>   
   <div class="form"  style = "font-family : Russo One">
     <form class="login-form">
-    <p>Date de cueillettes</p>
-    <input type="date">
+    <p>Date de debut de cueillettes</p>
+    <input type="dateD">
+    <p>Date de fin de cueillettes</p>
+    <input type="dateF">
 
     <p> Choix de Cueilleur </p>
+  <select name="cueilleur" id="select">
     <?php
       for ($i=0; $i < $isaV; $i++) { 
         ?>
-        <option value="<?php echo $cueillette[$i]['id_cueillette_the'] ?>"><?php echo $cueillette[$i]['nom_variete_the'] ?></option>
+        <option value="<?php echo $cueillette[$i]['id_cueilleurs'] ?>"><?php echo $cueillette[$i]['nom_ceuilleurs'] ?></option>
         <?php
       }
     ?>
+    </select><br>
 
     <p> Choix de Parcelle </p>
-  <select name="cueilleur" id="select">
-    <option value ="the">the </option>
-    <option value ="cafe">F </option>
+  <select name="Parcelle" id="select">
+    <?php
+      for ($i=0; $i < $isaV; $i++) { 
+        ?>
+        <option value="<?php echo $parcelle[$i]['id_parcelle'] ?>"><?php echo $parcelle[$i]['num_parcelle'] ?></option>
+        <?php
+      }
+    ?>
   </select><br>
     <p>Poids</p>
-    <input type="number"> 
+    <input type="number" name="poid"> 
  
   
       <button>Valider</button>
