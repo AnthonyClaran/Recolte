@@ -302,4 +302,11 @@
         $resultat=mysqli_query(dbconnect(),$sql);
         return getContent($resultat);
     }
+
+    function DeletresultatById($id)
+    {
+        $sql="Delete FROM resultat WHERE Id_resultat=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
 ?>
