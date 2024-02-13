@@ -189,7 +189,7 @@
 
     function gethisto_ceuillette()
     {
-        $sql="SELECT * FROM histo_ceuillette";
+        $sql="SELECT * FROM histo_cuiellet";
         $resultat=mysqli_query(dbconnect(),$sql);
         return getContent($resultat);
     }
@@ -340,7 +340,7 @@
         $resultat=mysqli_query(dbconnect(),$sql);
         return getContent($resultat);
     }
-    
+
 
     function setregeneration($id,$regeneration)
     {
