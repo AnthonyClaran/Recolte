@@ -68,6 +68,12 @@ date_fin DATE,
 FOREIGN KEY(id_cueilleurs) REFERENCES cueilleurs(id_cueilleurs)
 );
 
+CREATE TABLE rageneration(
+    id INT PRIMARY KEY,
+    regeneration INT
+);
+
+
 
 
 Insert into admine  VALUES ('1','Randrianante@gmail.com','FIDY','Nante Andria','2000-05-10' );
