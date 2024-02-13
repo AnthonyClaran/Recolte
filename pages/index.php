@@ -12,7 +12,6 @@
 
 </head>
 <body>
-<img src="../Assets/image/the.png" width="50" height="50"> <p style = "color : white; font-family : georgia; font-size : 20px; font-style: italic ; float = left">La Récolte </p> </img>
 <div class="login-page">
    <center> 
     <p style = "color : white; font-size: 18px; font-family: ANTON; font-style: italic; "> Veuillez completez en tant qu'Admin</p> 

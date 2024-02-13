@@ -27,8 +27,7 @@
   </div>
   <center> 
    <p style = "color : white; font-size: 18px; font-family: ANTON; font-style: italic; "> Passez en tant qu'Admin <a href = "index.php"> cliquer ici </p> 
-   </center> 
-   part1salle3!
+   </center>
 </div> 
 </body>
 </html>
