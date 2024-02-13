@@ -15,7 +15,7 @@
     <title>Recolte</title>
 
 </head>
-<body >
+<body>
 <nav class="navbar navbar-inverse">
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
@@ -29,6 +29,7 @@
   </div>
 </nav>
 
+<center> <img src="../Assets/image/logo.png" width=80px height=80px></center>
 <?php
   include($page);
 ?>
