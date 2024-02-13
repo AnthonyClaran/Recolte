@@ -50,7 +50,7 @@
     <?php
       for ($i=0; $i < $isa; $i++) { 
         
-  $ceuiller=get($histo[$i]['id_cueilleurs']);
+  $ceuiller=getcueilleursbyid($histo[$i]['id_cueilleurs']);
         ?>
           <tr>
             <td><?php echo $histo[$i]['date_debut'] ?></td>
