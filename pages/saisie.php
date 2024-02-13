@@ -7,12 +7,8 @@
 ?>
 <div class="login-page">   
   <div class="form"  style = "font-family : Russo One">
-<<<<<<< Updated upstream
     <form class="login-form" id="form">
-=======
-    <form class="login-form">
     <p style = "color : white; font-size: 30px; font-family: Greating ; "> Cueillettes</p> 
->>>>>>> Stashed changes
     <p>Date de debut de cueillettes</p>
     <input type="date" name="dateD">
     <p>Date de fin de cueillettes</p>
