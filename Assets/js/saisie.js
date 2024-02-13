@@ -1,7 +1,3 @@
-window.addEventListener("load", function () {
-    // Code that runs after the page finishes loading
-});
-
 function sendData() {
     var xhr; 
     try {
@@ -18,8 +14,6 @@ function sendData() {
             var msg = event.target.responseText;
             if (msg === "success") {
                 alert("L'achat est un succès");
-                var retour = JSON.parse(xhr.responseText);
-                updateDropdown(retour);
             } else {
                 alert("Erreur");
             }
@@ -32,7 +26,7 @@ function sendData() {
         alert('Oups! Quelque chose s\'est mal passé.');
     });
 
-    xhr.open("GET", "getVariete.php");
+    xhr.open("GET", "Voirsaise.php");
     xhr.send(formData);
 }
 

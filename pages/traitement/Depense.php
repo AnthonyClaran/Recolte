@@ -1,6 +1,6 @@
 <?php
     require('../../inc/Function.php');
-    $taille = getsalaire();
+    $taille = getcategorie();
     if (count($taille) == 0) {
         $id = 1; 
     } else {
