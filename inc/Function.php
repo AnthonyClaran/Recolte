@@ -333,6 +333,14 @@
         return getContent($resultat);
     }
 
+    function getcueilleursbyid(id)
+    {
+        $sql="SELECT * FROM cueilleurs Where id_cueilleurs = %d";
+        $sql=sprintf($sql,$id);
+        $resultat=mysqli_query(dbconnect(),$sql);
+        return getContent($resultat);
+    }
+
     function setregeneration($id,$regeneration)
     {
         $sql="INSERT INTO regeneration VALUES (%d,%d)";
