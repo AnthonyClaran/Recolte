@@ -190,7 +190,7 @@
         $sql=sprintf($sql,$idH,$id,$num,$poid,$dateD,$dateF);
         
         $resultat=mysqli_query(dbconnect(),$sql);
-        
+
     }
 
     function Deletehisto_cuielletById($id)
@@ -242,11 +242,31 @@
         mysqli_query(dbconnect(),$sql);
     }
 
-    function DeletcategorieById($id)
+    function DeletcueilleursById($id)
     {
-        $sql="Delete FROM categorie WHERE id_categorie=%d";
+        $sql="Delete FROM cueilleurs WHERE id_cueilleurs=%d";
         $sql=sprintf($sql,$id);
         mysqli_query(dbconnect(),$sql);
     }
 
+    function Deletdu_theById($id)
+    {
+        $sql="Delete FROM du_the WHERE id_variete_the=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
+
+    function DeletuserById($id)
+    {
+        $sql="Delete FROM user WHERE id_user=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
+
+    function DeletadmineById($id)
+    {
+        $sql="Delete FROM admine WHERE id_admin=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
 ?>
