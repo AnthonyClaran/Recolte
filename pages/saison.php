@@ -8,10 +8,11 @@
 
 
 <form class="login-form" action="traitement/Variete.php" method="GET">
-<p style = "color : green; font-size: 30px; font-family: Greating ; "> Saison de Regeneration</p> 
-<center>
-  <div style = "font-size: 20px; font-family: ANTON ; background-color : white;">
 
+<center>
+  <div style = "font-size: 20px; font-family: ANTON ; background-color : white; height : 600px">
+  <br>
+  <p style = "color : green; font-size: 30px; font-family: Greating ; "> Saison de Regeneration</p>
   <input type="checkbox" name="mois" value="1"> Janvier<br>
   <input type="checkbox" name="mois" value="2"> Fevrier <br>
   <input type="checkbox" name="mois" value="3"> Mars<br>
