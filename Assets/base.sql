@@ -92,6 +92,13 @@ CREATE TABLE regeneration(
     regeneration INT
 );
 
+CREATE TABLE mouvement
+(id_mouve INT PRIMARY KEY auto_increment,
+id_parcelle  INT,
+pod_plein int , 
+poid_mouvement int ,
+FOREIGN KEY (id_parcelle)REFERENCES parcelle(id_parcelle));
+
 Insert into admine  VALUES ('1','Randrianante@gmail.com','FIDY','Nante Andria','2000-05-10' );
 Insert into user  VALUES ('1','tikiz@gmail.com','tikiz','tikiz Randria','2003-06-12' );
 
