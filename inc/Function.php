@@ -121,10 +121,10 @@
         $resultat=mysqli_query(dbconnect(),$sql);
     }
 
-    function setresulat($poidt,$poidr,$cout)
+    function setresultat($id,$poidt,$poidr,$monatantV,$montantD,$banefice,$cout)
     {
-        $sql="INSERT INTO resulat VALUES (%d,%d,'%s')";
-        $sql=sprintf($sql,$poidt,$poidr,$cout);
+        $sql="INSERT INTO resultat VALUES (%d,'%s','%s','%s','%s','%s','%s')";
+        $sql=sprintf($sql,$id,$poidt,$poidr,$monatantV,$montantD,$banefice,$cout);
         
         $resultat=mysqli_query(dbconnect(),$sql);
     }
@@ -171,9 +171,9 @@
         return getContent($resultat);
     }
 
-    function getresulat()
+    function getresultat()
     {
-        $sql="SELECT * FROM resulat";
+        $sql="SELECT * FROM resultat";
         $resultat=mysqli_query(dbconnect(),$sql);
         return getContent($resultat);
     }
@@ -278,5 +278,55 @@
         
         $resultat=mysqli_query(dbconnect(),$sql);
 
+    }
+
+    function setmouvement($idM,$idP,$poidP,$poidM)
+    {
+        $sql="INSERT INTO mouvement VALUES (%d,%d,'%s','%s')";
+        $sql=sprintf($sql,$idM,$idP,$poidP,$poidM);
+        
+        $resultat=mysqli_query(dbconnect(),$sql);
+
+    }
+
+    function DeletmouvementById($id)
+    {
+        $sql="Delete FROM mouvement WHERE id_mouve=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
+
+    function getmouvement()
+    {
+        $sql="SELECT * FROM mouvement";
+        $resultat=mysqli_query(dbconnect(),$sql);
+        return getContent($resultat);
+    }
+
+    function DeletresultatById($id)
+    {
+        $sql="Delete FROM resultat WHERE Id_resultat=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
+
+    function getregeneration()
+    {
+        $sql="SELECT * FROM regeneration";
+        $resultat=mysqli_query(dbconnect(),$sql);
+        return getContent($resultat);
+    }
+
+    function setregeneration($id,$regeneration)
+    {
+        $sql="INSERT INTO regeneration VALUES (%d,%d)";
+        $sql=sprintf($sql,$id,$regeneration);
+        
+        $resultat=mysqli_query(dbconnect(),$sql);
+
+    }
+    function insertCheckBox($mois)
+    {
+        
     }
 ?>

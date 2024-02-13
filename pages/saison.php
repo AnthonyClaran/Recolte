@@ -1,9 +1,9 @@
 <?php
   require('../inc/Function.php');
-  $variete = getdu_the();
+  $saison = getdu_the();
   $isa=count($saison);
 ?>
-<div class="login-page">
+<div class="login-page login-form">
 
 
 
@@ -12,18 +12,18 @@
 <center>
   <div style = "font-size: 20px; font-family: ANTON ; background-color : white;">
 
-  <input type="checkbox" name="mois" value="Janvier"> Janvier
-  <input type="checkbox" name="mois" value="Fevrier"> Fevrier 
-  <input type="checkbox" name="mois" value="Mars"> Mars
-  <input type="checkbox" name="mois" value="Avril"> Avril
-  <input type="checkbox" name="mois" value="Mai"> Mai
-  <input type="checkbox" name="mois" value="Juin">Juin<br>
-  <input type="checkbox" name="mois" value="Juillet"> Juillet
-  <input type="checkbox" name="mois" value="Aout"> Aout
-  <input type="checkbox" name="mois" value="Septembre"> Septembre
-  <input type="checkbox" name="mois" value="Octobre"> Octobre
-  <input type="checkbox" name="mois" value="Novembre"> Novembre
-  <input type="checkbox" name="mois" value="Decembre"> Decembre
+  <input type="checkbox" name="mois" value="1"> Janvier<br>
+  <input type="checkbox" name="mois" value="2"> Fevrier <br>
+  <input type="checkbox" name="mois" value="3"> Mars<br>
+  <input type="checkbox" name="mois" value="4"> Avril<br>
+  <input type="checkbox" name="mois" value="5"> Mai<br>
+  <input type="checkbox" name="mois" value="6">Juin<br>
+  <input type="checkbox" name="mois" value="7"> Juillet<br>
+  <input type="checkbox" name="mois" value="8"> Aout<br>
+  <input type="checkbox" name="mois" value="9"> Septembre<br>
+  <input type="checkbox" name="mois" value="10"> Octobre<br>
+  <input type="checkbox" name="mois" value="11"> Novembre<br>
+  <input type="checkbox" name="mois" value="12"> Decembre<br>
   <br>
   <br>
   <button> Sauvegarder</button>

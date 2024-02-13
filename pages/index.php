@@ -11,8 +11,8 @@
     <title>Recolte</title>
 
 </head>
-<body style="background: url(../Assets/image/hehe.jpg) ; background-repeat : no-repeat; background-size : cover;">
 
+<body style="background: url(../Assets/image/hehe.jpg) ; background-repeat : no-repeat; background-size : cover;">
 <div class="login-page">
     
   <div class="form">

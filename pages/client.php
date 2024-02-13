@@ -29,6 +29,7 @@
         <li><a href="client.php?page=front-depense">Depenses</a></li>
         <li><a href="client.php?page=resultat">Resultat</a></li>
         <li><a href="client.php?page=liste">ListeDePaye</a></li>
+        <li><a href="users.php">se deconnecter</a></li>
       </ul>
     </div>
   </div>
