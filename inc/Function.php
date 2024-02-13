@@ -171,9 +171,9 @@
         return getContent($resultat);
     }
 
-    function getresulat()
+    function getresultat()
     {
-        $sql="SELECT * FROM resulat";
+        $sql="SELECT * FROM resultat";
         $resultat=mysqli_query(dbconnect(),$sql);
         return getContent($resultat);
     }
