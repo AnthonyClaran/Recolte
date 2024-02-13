@@ -4,13 +4,11 @@
   $isa=count($variete);
 ?>
 <div class="login-page">
-   <center> 
-    <p style = "color : white; font-size: 30px; font-family: Greating ; "> Gestion de Variété de Thé</p> 
-    
-   </center>   
+   
 
   <div class="form" style = "font-family : Russo One">
     <form class="login-form" action="traitement/Variete.php" method="GET">
+    <p style = "color : Green; font-size: 30px; font-family: Greating ; "> Gestion de variété de Thé</p>
     <p>Nom du The </p>
       <input type="text" name="nom"> 
     <p>m/pieds</p>
@@ -22,31 +20,7 @@
       </form>
   </div>
 </div>
-<div>
-<form class="login-form" action="traitement/Variete.php" method="GET">
-<center>
-  <div style = "margin: 30px; background-color: #ffffff; border: 1px solid black; opacity: 0.6">
-  <p style = "color : white; font-size: 20px; font-family: georgia ; "> Saison de Regeneration </p>
-  <input type="checkbox" name="mois" value="Janvier"> Janvier
-  <input type="checkbox" name="mois" value="Fevrier"> Fevrier 
-  <input type="checkbox" name="mois" value="Mars"> Mars
-  <input type="checkbox" name="mois" value="Avril"> Avril
-  <input type="checkbox" name="mois" value="Mai"> Mai
-  <input type="checkbox" name="mois" value="Juin">Juin<br>
-  <input type="checkbox" name="mois" value="Juillet"> Juillet
-  <input type="checkbox" name="mois" value="Aout"> Aout
-  <input type="checkbox" name="mois" value="Septembre"> Septembre
-  <input type="checkbox" name="mois" value="Octobre"> Octobre
-  <input type="checkbox" name="mois" value="Novembre"> Novembre
-  <input type="checkbox" name="mois" value="Decembre"> Decembre
-  <br>
-  <br>
-  <button> Sauvegarder</button>
-</p>
-</div>
-</div>
-</center>
-</form>
+
 <br>
   <center>
   <Table class = "table" style = "background-color : white">

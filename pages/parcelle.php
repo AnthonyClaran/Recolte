@@ -6,12 +6,10 @@
   $isap=count($parcelle);
 ?>
 <div class="login-page">
-   <center> 
-    <p style = "color : white; font-size: 30px; font-family: Greating ;  "> Gestion de Parcelle</p> 
-    
-   </center>   
+
   <div class="form"  style = "font-family : Russo One">
     <form class="login-form" action="traitement/Parcelle.php" method="GET" >
+    <p style = "color : green; font-size: 30px; font-family: Greating ;  "> Gestion de Parcelle</p> 
     <p>N de Parcelle</p>
       <input type="number" name="num"> 
     <p>Surface en Ha</p>

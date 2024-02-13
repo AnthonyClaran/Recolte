@@ -4,12 +4,9 @@
   $isa=count($cueilleur);
 ?>
 <div class="login-page">
-   <center> 
-    <p style = "color : white; font-size: 30px; font-family: Greating ; "> Gestion des Cueilleurs</p> 
-    
-   </center>   
   <div class="form"  style = "font-family : Russo One">
     <form class="login-form" action="traitement/Cueilleur.php" method="GET" >
+    <p style = "color : green; font-size: 30px; font-family: Greating ; "> Gestion des Cueilleurs</p> 
     <p>Nom</p>
       <input type="text" name="nom"> 
 

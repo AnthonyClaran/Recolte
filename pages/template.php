@@ -31,6 +31,7 @@
         <li><a href="template.php?page=cueilleur">Cueilleurs</a></li>
         <li><a href="template.php?page=depense">Depense</a></li>
         <li><a href="template.php?page=salaire">Salaire</a></li>
+        <li><a href="template.php?page=saison">Saison</a></li>
       </ul>
     </div>
   </div>
