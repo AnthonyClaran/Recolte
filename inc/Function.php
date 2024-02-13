@@ -177,13 +177,20 @@
         return getContent($resultat);
     }
 
+<<<<<<< Updated upstream
     function gethisto_cuiellet ()
     {
         $sql="SELECT * FROM histo_cuiellet ";
+=======
+    function gethisto_ceuillette()
+    {
+        $sql="SELECT * FROM histo_ceuillette";
+>>>>>>> Stashed changes
         $resultat=mysqli_query(dbconnect(),$sql);
         return getContent($resultat);
     }
 
+<<<<<<< Updated upstream
     function sethisto_cuiellet ($idH,$id,$num,$poid,$dateD,$dateF)
     {
         $sql="INSERT INTO histo_cuiellet VALUES (%d,%d,%d,'%s','%s','%s')";
@@ -268,5 +275,13 @@
         $sql="Delete FROM admine WHERE id_admin=%d";
         $sql=sprintf($sql,$id);
         mysqli_query(dbconnect(),$sql);
+=======
+    function sethisto_ceuillette($id,$num,$dateD,$dateF,$poid)
+    {
+        $sql="INSERT INTO histo_ceuillette VALUES (%d,%d,'%s','%s','%s')";
+        $sql=sprintf($sql,$id,$num,$dateD,$dateF,$poid);
+        
+        $resultat=mysqli_query(dbconnect(),$sql);
+>>>>>>> Stashed changes
     }
 ?>

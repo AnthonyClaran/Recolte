@@ -64,6 +64,7 @@ poid_restant INT,
 cout_de_revien_kg DOUBLE
 );
 
+<<<<<<< Updated upstream
 CREATE TABLE histo_cuiellet 
 (
 id_histo INT PRIMARY KEY auto_increment,
@@ -74,6 +75,17 @@ date_debut DATE,
 date_fin DATE,
 FOREIGN KEY(id_cueilleurs) REFERENCES cueilleurs(id_cueilleurs)
 );
+=======
+CREATE TABLE histo_ceuillette(
+    id_cueilleurs INT,
+    num_parcelle INT,
+    date_debut DATE,
+    date_fin DATE,
+    poids_cueillet DOUBLE,
+    FOREIGN key(id_cueilleurs) REFERENCES cueilleurs(id_cueilleurs)
+);
+
+>>>>>>> Stashed changes
 
 CREATE TABLE regeneration(
     id INT PRIMARY KEY auto_increment,
