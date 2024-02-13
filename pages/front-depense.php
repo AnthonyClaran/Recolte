@@ -4,12 +4,10 @@
   $isa=count($depense);
 ?>
 <div class="login-page">
-   <center> 
-    <p style = "color : white; font-size: 30px; font-family: Greating ; "> Cueillettes</p> 
-    
-   </center>   
+   
   <div class="form" style = "font-family : Russo One">
     <form class="login-form" action="traitement/Front-depense.php" method="GET" >
+    <p style = "color : green; font-size: 30px; font-family: Greating ; "> Cueillettes</p> 
     <p>Date de depenses</p>
     <input type="date" name="date">
 

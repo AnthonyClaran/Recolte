@@ -4,13 +4,10 @@
   $isa=count($salaire);
 ?>
 <div class="login-page">
-   <center> 
-    <p style = "color : white; font-size: 30px; font-family: Greating ; "> Configuration des Salaires</p> 
-    
-   </center>   
 
   <div class="form" style = "font-family : Russo One">
     <form class="login-form" action="traitement/Salaire.php" method="GET">
+    <p style = "color : green ; font-size: 30px; font-family: Greating ; "> Configuration des Salaires</p>
     <p>Salaire</p>
       <input type="number" name="salaire"> 
 
