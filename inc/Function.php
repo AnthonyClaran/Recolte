@@ -340,6 +340,7 @@
         $resultat=mysqli_query(dbconnect(),$sql);
         return getContent($resultat);
     }
+    
 
     function setregeneration($id,$regeneration)
     {
