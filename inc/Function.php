@@ -192,4 +192,11 @@
         $resultat=mysqli_query(dbconnect(),$sql);
     }
 
+    function DeleteProduitById($id)
+    {
+        $sql="Delete FROM Produit WHERE idCategorie=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
+
 ?>
