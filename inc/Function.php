@@ -325,7 +325,7 @@
         return getContent($resultat);
     }
 
-    function getregenerationbyid(id)
+    function getregenerationbyid($id)
     {
         $sql="SELECT * FROM regeneration Where id = %d";
         $sql=sprintf($sql,$id);
@@ -333,7 +333,7 @@
         return getContent($resultat);
     }
 
-    function getcueilleursbyid(id)
+    function getcueilleursbyid($id)
     {
         $sql="SELECT * FROM cueilleurs Where id_cueilleurs = %d";
         $sql=sprintf($sql,$id);
