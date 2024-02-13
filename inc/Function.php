@@ -112,10 +112,10 @@
         $resultat=mysqli_query(dbconnect(),$sql);
     }
 
-    function setparcelle($num,$surface,$id)
+    function setparcelle($idp,$num,$surface,$id)
     {
-        $sql="INSERT INTO parcelle VALUES (%d,%d,%d)";
-        $sql=sprintf($sql,$num,$surface,$id);
+        $sql="INSERT INTO parcelle VALUES (%d,%d,%d,%d)";
+        $sql=sprintf($sql,$idp,$num,$surface,$id);
         
         $resultat=mysqli_query(dbconnect(),$sql);
     }
