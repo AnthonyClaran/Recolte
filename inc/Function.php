@@ -325,6 +325,14 @@
         return getContent($resultat);
     }
 
+    function getregenerationbyid(id)
+    {
+        $sql="SELECT * FROM regeneration Where id = %d";
+        $sql=sprintf($sql,$id);
+        $resultat=mysqli_query(dbconnect(),$sql);
+        return getContent($resultat);
+    }
+
     function setregeneration($id,$regeneration)
     {
         $sql="INSERT INTO regeneration VALUES (%d,%d)";
