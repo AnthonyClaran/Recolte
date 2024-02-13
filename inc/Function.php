@@ -104,6 +104,7 @@
         $resultat=mysqli_query(dbconnect(),$sql);
     }
 
+    
     function setsalaire($id,$montant)
     {
         $sql="INSERT INTO salaire VALUES (%d,'%s')";

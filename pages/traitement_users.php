@@ -8,6 +8,6 @@
         header('location:client.php?page=saisie');
     }
     else {
-        //header('location:users.php');
+        header('location:users.php');
     }
 ?>
