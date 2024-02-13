@@ -67,7 +67,6 @@ benefice DOUBLE,
 cout_de_revien_kg DOUBLE
 );
 
-<<<<<<< Updated upstream
 CREATE TABLE histo_cuiellet 
 (
 id_histo INT PRIMARY KEY auto_increment,
