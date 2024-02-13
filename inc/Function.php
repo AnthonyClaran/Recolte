@@ -325,4 +325,8 @@
         $resultat=mysqli_query(dbconnect(),$sql);
 
     }
+    function insertCheckBox($mois)
+    {
+        
+    }
 ?>
