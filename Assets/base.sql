@@ -42,19 +42,24 @@ FOREIGN KEY(id_categorie) REFERENCES categorie (id_categorie)
  );
 
 Create table salaire
-(id_cueilleurs INT,
+(
+id_salaire INT PRIMARY KEY auto_increment,
+id_cueilleurs INT,
 montant DOUBLE 
 );
 
 CREATE TABLE parcelle 
-(num_parcelle INT,
+(
+id_parcelle INT PRIMARY KEY auto_increment,
+num_parcelle INT,
 surface_ha INT,
 id_variete_the INT, 
 FOREIGN KEY(id_variete_the) REFERENCES du_the (id_variete_the) 
 );
 
 CREATE TABLE resulat 
-(poid_total_ceuillette INT,
+( Id_resultat INT PRIMARY KEY auto_increment,
+poid_total_ceuillette INT,
 poid_restant INT,
 cout_de_revien_kg DOUBLE
 );

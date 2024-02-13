@@ -184,17 +184,67 @@
         return getContent($resultat);
     }
 
-    function sethisto_cuiellet ($id,$num,$poid,$dateD,$dateF)
+    function sethisto_cuiellet ($idH,$id,$num,$poid,$dateD,$dateF)
     {
-        $sql="INSERT INTO histo_cuiellet VALUES (%d,%d,'%s','%s','%s')";
-        $sql=sprintf($sql,$poidt,$poidr,$cout);
+        $sql="INSERT INTO histo_cuiellet VALUES (%d,%d,%d,'%s','%s','%s')";
+        $sql=sprintf($sql,$idH,$id,$num,$poid,$dateD,$dateF);
         
         $resultat=mysqli_query(dbconnect(),$sql);
+        
     }
 
     function Deletehisto_cuielletById($id)
     {
-        $sql="Delete FROM histo_cuiellet WHERE idCategorie=%d";
+        $sql="Delete FROM histo_cuiellet WHERE id_histo=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
+
+    function DeleteregenerationById($id)
+    {
+        $sql="Delete FROM regeneration WHERE id=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
+
+    function DeletresulatById($id)
+    {
+        $sql="Delete FROM resulat WHERE Id_resultat=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
+
+    function DeletparcelleById($id)
+    {
+        $sql="Delete FROM parcelle WHERE id_parcelle=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
+
+    function DeletsalaireById($id)
+    {
+        $sql="Delete FROM salaire WHERE id_salaire=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
+
+    function DeletdepenseById($id)
+    {
+        $sql="Delete FROM depense WHERE id_depense=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
+
+    function DeletcategorieById($id)
+    {
+        $sql="Delete FROM categorie WHERE id_categorie=%d";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
+
+    function DeletcategorieById($id)
+    {
+        $sql="Delete FROM categorie WHERE id_categorie=%d";
         $sql=sprintf($sql,$id);
         mysqli_query(dbconnect(),$sql);
     }
