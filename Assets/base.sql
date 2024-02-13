@@ -95,7 +95,7 @@ CREATE TABLE regeneration(
 CREATE TABLE mouvement
 (id_mouve INT PRIMARY KEY auto_increment,
 id_parcelle  INT,
-pod_plein int , 
+poid_plein int , 
 poid_mouvement int ,
 FOREIGN KEY (id_parcelle)REFERENCES parcelle(id_parcelle));
 
