@@ -309,4 +309,20 @@
         $sql=sprintf($sql,$id);
         mysqli_query(dbconnect(),$sql);
     }
+
+    function getregeneration()
+    {
+        $sql="SELECT * FROM regeneration";
+        $resultat=mysqli_query(dbconnect(),$sql);
+        return getContent($resultat);
+    }
+
+    function setregeneration($id,$regeneration)
+    {
+        $sql="INSERT INTO regeneration VALUES (%d,%d)";
+        $sql=sprintf($sql,$id,$regeneration);
+        
+        $resultat=mysqli_query(dbconnect(),$sql);
+
+    }
 ?>
