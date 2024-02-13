@@ -7,14 +7,9 @@
         $idH = 1; 
     } else {
         $idH = count($taille) + 1;
-        foreach ($taille as $tail) {
-            if ($_POST['poid']==$tail['surface_ha']) {
-                # code...
-            }
-        }
     }
 
-    if(isset($_POST['cueilleur']) && j==1) {
+    if(isset($_POST['cueilleur']) && $j==1) {
         $dateD = $_POST['dateD'];
         $dateF = $_POST['dateF'];
         $id = $_POST['cueilleur'];
@@ -37,5 +32,5 @@
 
         echo json_encode($response);
     }
-    
+
 ?>
