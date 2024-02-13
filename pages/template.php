@@ -32,6 +32,7 @@
         <li><a href="template.php?page=depense">Depense</a></li>
         <li><a href="template.php?page=salaire">Salaire</a></li>
         <li><a href="template.php?page=saison">Saison</a></li>
+        <li><a href="index.php">se deconnecter</a></li>
       </ul>
     </div>
   </div>
