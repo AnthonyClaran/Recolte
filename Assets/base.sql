@@ -1,7 +1,7 @@
 
 
 
-use db_desp3_ETU002866;
+use db_desp3_ETU002820;
 CREATE TABLE admine 
 (id_admin INT primary key auto_increment,
 Email VARCHAR(50),

@@ -72,9 +72,9 @@
         $resultat=mysqli_query(dbconnect(),$sql);
     }
 
-    function setpartielle($num,$surface,$idvar)
+    function setpartielle($id,$num,$surface,$idvar)
     {
-        $sql="INSERT INTO partielle VALUES (%d,%d,%d)";
+        $sql="INSERT INTO partielle VALUES (%d,%d,%d,%d)";
         $sql=sprintf($sql,$id,$nom,$occup,$rende);
         
         $resultat=mysqli_query(dbconnect(),$sql);

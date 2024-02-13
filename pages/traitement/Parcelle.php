@@ -1,6 +1,6 @@
 <?php
     require('../../inc/Function.php');
-    $taille = getsalaire();
+    $taille = getparcelle();
     if (count($taille) == 0) {
         $id = 1; 
     } else {
@@ -9,9 +9,9 @@
 
     $num = $_GET['num'];
     $surface =$_GET['surface'];
-    $id = $_GET['variete'];
+    $idvar = $_GET['variete'];
 
-    setparcelle($num,$surface,$id);
+    setparcelle($id,$num,$surface,$idvar);
 
     header('location:../template.php?page=parcelle');
 ?>

@@ -1,23 +1,34 @@
 <?php
     require('../inc/Function.php');
     header("Content-Type: application/json");
-
-    $taille = getdu_the();
+    $taille = gethisto_cuiellet ();
     if (count($taille) == 0) {
         $idH = 1; 
     } else {
         $idH = count($taille) + 1;
     }
 
-    $dateD = $_POST['dateD'];
-    $dateF = $_POST['dateF'];
-    $id = $_POST['cueilleur'];
-    $num = $_POST['Parcelle'];
-    $poid = $_POST['poid'];
+    if(isset($_POST['cueilleur'])) {
+        $dateD = $_POST['dateD'];
+        $dateF = $_POST['dateF'];
+        $id = $_POST['cueilleur'];
+        $num = $_POST['Parcelle'];
+        $poid = $_POST['poid'];
+    
+        sethisto_cuiellet ($idH,$id,$num,$poid,$dateD,$dateF);
 
-    sethisto_cuiellet ($idH,$id,$num,$poid,$dateD,$dateF);
+        $response = array(
+            'success' => "true",
+            'message' => 'success'
+        );
 
-    $retour = array("success" => true); 
+        echo json_encode($response);
+    } else {
+        $response = array(
+            'success' => "false",
+            'message' => 'Données manquantes'
+        );
 
-    echo json_encode($retour);
+        echo json_encode($response);
+    }
 ?>
