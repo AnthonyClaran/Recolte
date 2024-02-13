@@ -20,9 +20,9 @@
   </div>
 </div>
 <div>
-  <Table>
-    <tr>
-      <td>id de cueilleurs</td>
+  <Table broder>
+    <tr style = "background-color = White">
+      <td>iD de cueilleurs</td>
       <td>montant</td>
     </tr>
     <?php
