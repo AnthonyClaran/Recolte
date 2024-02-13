@@ -163,6 +163,14 @@
         $resultat=mysqli_query(dbconnect(),$sql);
         return getContent($resultat);
     }
+    
+    function getparcelleByNum($num)
+    {
+        $sql="SELECT * FROM parcelle Where num_parcelle = %d";
+        $sql=sprintf($sql,$num);
+        $resultat=mysqli_query(dbconnect(),$sql);
+        return getContent($resultat);
+    }
 
     function getsalaire()
     {
@@ -317,6 +325,22 @@
         return getContent($resultat);
     }
 
+    function getregenerationbyid(id)
+    {
+        $sql="SELECT * FROM regeneration Where id = %d";
+        $sql=sprintf($sql,$id);
+        $resultat=mysqli_query(dbconnect(),$sql);
+        return getContent($resultat);
+    }
+
+    function getcueilleursbyid(id)
+    {
+        $sql="SELECT * FROM cueilleurs Where id_cueilleurs = %d";
+        $sql=sprintf($sql,$id);
+        $resultat=mysqli_query(dbconnect(),$sql);
+        return getContent($resultat);
+    }
+
     function setregeneration($id,$regeneration)
     {
         $sql="INSERT INTO regeneration VALUES (%d,%d)";
@@ -325,8 +349,21 @@
         $resultat=mysqli_query(dbconnect(),$sql);
 
     }
+    function Deleteregeneration()
+    {
+        $sql="Delete FROM regeneration ";
+        $sql=sprintf($sql,$id);
+        mysqli_query(dbconnect(),$sql);
+    }
     function insertCheckBox($mois)
     {
-        
+        $taille = getregeneration();
+        if (count($taille) == 0) {
+            $id = 1; 
+        } else {
+            $id = count($taille) + 1;
+        }
+        setregeneration($id,$mois);
     }
+
 ?>
