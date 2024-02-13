@@ -1,6 +1,5 @@
 
 
-CREATE DATABASE Recolte;
 
 use db_desp3_ETU002866;
 CREATE TABLE admine 
@@ -25,7 +24,8 @@ occupation INT, rendement INT );
 Create table cueilleurs
 (id_cueilleurs INT primary key,
 nom_ceuilleurs VARCHAR(50),
-genre VARCHAR(20), 
+genre V
+ARCHAR(20), 
 DateNaissance date );
 
 CREATE table categorie(
@@ -80,10 +80,6 @@ CREATE TABLE regeneration(
     regeneration INT
 );
 
-
-
-
-
-
 Insert into admine  VALUES ('1','Randrianante@gmail.com','FIDY','Nante Andria','2000-05-10' );
 Insert into user  VALUES ('1','tikiz@gmail.com','tikiz','tikiz Randria','2003-06-12' );
+
